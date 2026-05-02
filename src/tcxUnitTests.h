@@ -35,10 +35,8 @@ public:
         }
         std::cout << "took " << ms << "ms" << std::endl;
 
-        requestExit();
+        std::exit(num_failed_);
     }
-
-    int failCount() const { return num_failed_; }
 
 protected:
     virtual void run() = 0;
@@ -117,11 +115,9 @@ private:
 };
 
 template<typename AppClass>
-int runTests() {
+void runTests() {
     AppClass app;
     app.setup();
-    app.exit();
-    return app.failCount();
 }
 
 } // namespace tcx

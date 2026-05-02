@@ -18,7 +18,7 @@ class TestApp : public tcx::UnitTestsApp {
 };
 
 int main() {
-    return tcx::runTests<TestApp>();
+    tcx::runTests<TestApp>();
 }
 ```
 
@@ -44,7 +44,7 @@ Inherit from `tcx::UnitTestsApp` and override `run()`.
 
 ### Exit Code
 
-`tcx::runTests<App>()` returns the number of failed tests (0 = all passed). Use with CI:
+`tcx::runTests<App>()` calls `std::exit(N)` where N is the number of failed tests (0 = all passed). Use with CI:
 
 ```yaml
 - run: ./testApp
