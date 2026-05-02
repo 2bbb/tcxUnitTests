@@ -1,6 +1,6 @@
 # tcxUnitTests
 
-Unit testing framework for [TrussC](https://github.com/TrussC-org/TrussC) addons, modeled after [ofxUnitTests](https://github.com/openframeworks/openFrameworks/tree/master/addons/ofxUnitTests).
+Unit testing framework for [TrussC](https://github.com/TrussC-org/TrussC) addons, based on [ofxUnitTests](https://github.com/openframeworks/openFrameworks/tree/master/addons/ofxUnitTests) from openFrameworks.
 
 ## Usage
 
