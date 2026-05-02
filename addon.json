@@ -1,0 +1,6 @@
+{
+    "name": "tcxUnitTests",
+    "description": "Unit testing framework for TrussC addons",
+    "author": "2bbb",
+    "license": "MIT"
+}
